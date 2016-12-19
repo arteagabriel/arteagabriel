@@ -1,0 +1,34 @@
+{
+  "name": "arteagabriel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-main-bower-files": "^1.5.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-swig": "^0.8.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arteagabriel/arteagabriel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arteagabriel/arteagabriel/issues"
+  },
+  "homepage": "https://github.com/arteagabriel/arteagabriel#readme",
+  "description": ""
+}
