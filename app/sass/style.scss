@@ -31,31 +31,35 @@ $playfair: 'playfair_displaybold';
 $dark-gray: #212121;
 $light-gray: #cccccc;
 $navy: #003366;
-$yellow: #ffcc00;
+$yellow: #D2C00B;
+
+$brand-primary: $dark-gray;
+$brand-secondary: $light-gray;
+$brand-tertiary: #083A6B;
 
 // Transitions
 $opacity-transition: opacity 0.3s ease;
 $color-transition: color 0.3s ease;
 
 body, html {
-  background-color: $light-gray;
+  background-color: $brand-secondary;
 }
 
 h1 {
   font-family: $playfair;
   font-size: 60px;
-  color: $navy;
+  color: $brand-tertiary;
 }
 
 h2 {
   font-family: $condensed;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: $light-gray;
+  color: $brand-secondary;
 }
 
 section:nth-of-type(even) {
-  background-color: $navy;
+  background-color: $brand-tertiary;
 }
 
 section:nth-of-type(odd) {
@@ -86,6 +90,7 @@ header {
 
     h1 {
       vertical-align: middle;
+      text-align: center;
       transition: $opacity-transition;
 
       &:hover{
@@ -95,76 +100,9 @@ header {
       @media only screen and (max-width: 991px) {
         font-size: 50px;
       }
-    }
-  }
 
-  .nav-container {
-    padding: 0;
-    height: 100px;
-    color: $dark-gray;
-
-    .triangle-top-left {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-top: 99px solid $light-gray;
-      border-right: 99px solid transparent;
-
-      @media only screen and (max-width: 767px) {
-        display: none;
-      }
-    }
-
-    nav {
-      float: right;
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 35px;
-
-      @media only screen and (max-width: 767px) {
-        text-align: center;
-        display: block;
-        float: none;
-      }
-
-      ul {
-        @media only screen and (max-width: 767px) {
-          padding: 0;
-        }
-
-        li {
-          display: inline-block;
-          margin: 0 25px;
-          transition: 0.3s ease;
-
-          &:hover {
-            transform: translateY(-5px) scale(1.25);
-
-            a {
-              color: $navy;
-            }
-          }
-
-          @media only screen and (max-width: 550px) {
-            margin: 0 15px;
-          }
-
-          a {
-            color: $dark-gray;
-            font-family: $regular;
-            font-size: 24px;
-            letter-spacing: 2px;
-            cursor: pointer;
-
-            @media only screen and (max-width: 991px) {
-              font-size: 22px;
-            }
-
-            @media only screen and (max-wdith: 550px) {
-              font-size: 16px;
-            }
-          }
-        }
+      @media only screen and (max-width: 550px) {
+        font-size: 35px;
       }
     }
   }
@@ -182,7 +120,7 @@ header {
 
   .work-container {
     height: 300px;
-    background-color: $dark-gray;
+    background-color: $brand-primary;
 
 
     > img {
@@ -197,8 +135,14 @@ header {
       width: 80%;
     }
 
-    #joie {
+    #blues {
       height: 80%;
+      width: auto;
+    }
+
+    #alpha {
+      height: 80%;
+      width: auto;
     }
 
     #cso {
@@ -237,29 +181,16 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: $dark-gray;
+        color: $brand-primary;
         opacity: 1;
       }
-    }
-  }
-
-  .work-expand {
-    display: none;
-    background-color: $dark-gray;
-
-    img {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      display: block;
-      margin: 0 auto;
-      width: 70%;
     }
   }
 }
 
 #about {
   p {
-    color: $light-gray;
+    color: $brand-secondary;
     font-size: 16px;
     font-family: $regular;
     letter-spacing: 1px;
@@ -288,7 +219,7 @@ header {
         letter-spacing: 1px;
         font-size: 18px;
         font-family: $regular;
-        color: $light-gray;
+        color: $brand-secondary;
         transition: $color-transition;
 
         &:hover {
