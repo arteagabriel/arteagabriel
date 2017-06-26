@@ -1,0 +1,59 @@
+.client-card {
+  .card-image {
+    position: relative;
+
+    .card-overlay {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      transition: 0.3s ease;
+      transform: translate3d(0, 0,0);
+
+      .card-overlay-text {
+        text-transform: uppercase;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        letter-spacing: 0;
+        font-size: 0;
+        transition: 0.3s ease;
+      }
+    }
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  &:hover {
+    .card-overlay {
+      opacity: 1;
+
+      .card-overlay-text {
+        font-size: 2rem;
+        letter-spacing: 4px;
+      }
+    }
+  }
+}
+
+.card-content {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(141deg, #9c9c9c 0%, #d6d6d6 71%, #f1f1f1 100%);
+    width: 100%;
+    height: 3px;
+    content: '';
+  }
+}
