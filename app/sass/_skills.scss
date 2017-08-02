@@ -1,0 +1,14 @@
+.skills {
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  .container {
+    border-top: 3px solid black;
+    padding-top: 2rem;
+
+    @media screen and (max-width: 768px) {
+      padding-top: 1rem;
+    }
+  }
+}

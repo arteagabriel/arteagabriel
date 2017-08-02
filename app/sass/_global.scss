@@ -1,0 +1,34 @@
+html {
+  background-image: url('../image/dots.png');
+}
+
+.container {
+  @media screen and (min-width: 1392px) {
+    max-width: 1248px;
+    width: 1248px;
+  }
+}
+
+.section {
+  outline: none;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+body {
+  @media screen and (min-width: 769px) {
+    margin-bottom: 250px;
+  }
+}
+
+#hire-me {
+  z-index: 100;
+  transition: 0.3s color ease;
+
+  &:hover {
+    color: $primary;
+  }
+}

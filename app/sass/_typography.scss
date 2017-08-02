@@ -1,0 +1,11 @@
+.is-size-3 {
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
