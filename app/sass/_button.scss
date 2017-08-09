@@ -1,0 +1,28 @@
+.button {
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  transition: 0.3s ease;
+  font-weight: 700;
+  border-width: 3px;
+
+  &.is-black {
+    border-color: black;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+    }
+  }
+
+  &.is-white {
+    border-color: white;
+
+    &:hover {
+      background-color: transparent;
+      border-color: white;
+      color: white;
+    }
+  }
+}
+

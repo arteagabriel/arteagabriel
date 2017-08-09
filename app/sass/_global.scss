@@ -1,7 +1,3 @@
-html {
-  background-image: url('../image/dots.png');
-}
-
 .container {
   @media screen and (min-width: 1392px) {
     max-width: 1248px;
@@ -18,17 +14,39 @@ html {
   }
 }
 
-body {
+#hire-me {
+  z-index: 100;
+
   @media screen and (min-width: 769px) {
-    margin-bottom: 250px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
-#hire-me {
-  z-index: 100;
-  transition: 0.3s color ease;
+#logo {
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 0 auto 2rem;
+  }
+}
 
-  &:hover {
-    color: $primary;
+.dots-bg {
+  background-image: url('/image/dots.png');
+  color: white;
+
+
+  .title {
+    color: inherit;
+  }
+}
+
+#contact {
+  background-color: #1b1b1b;
+
+  @media screen and (min-width: 769px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 }
