@@ -81,7 +81,8 @@ gulp.task('browser-sync', function() {
    browserSync({
       server:{
          baseDir: "./app/"
-      }
+      },
+     https: true
    });
 });
 

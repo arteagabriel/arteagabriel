@@ -4,9 +4,9 @@
 
 .clients-background {
   position: absolute;
-  top: calc(100% / 6);
+  top: percentage(1/($num-clients * 2));
   width: 100%;
-  height: calc( (100% / 3) * 2 );
+  height: percentage(($num-clients - 1) / $num-clients);
   background-color: #1b1b1b;
   z-index: -1;
 }
@@ -73,6 +73,12 @@
   bottom: 0;
   vertical-align: middle;
   transition: 0.6s ease;
+
+  &.client-showcase-phone {
+    top: 15%;
+    width: 60%;
+    transform: none;
+  }
 }
 
 .client-learn-more {
@@ -97,6 +103,62 @@
   }
 }
 
+#baldwin {
+  .client-title {
+    color: $baldwin-primary;
+
+    &:after {
+      background-color: $baldwin-primary;
+    }
+  }
+
+  .client-showcase {
+    background: linear-gradient(180deg, $baldwin-primary, $baldwin-primary 25%, $baldwin-secondary);
+  }
+}
+
+#onzie {
+  .client-title {
+    color: $onzie-primary;
+
+    &:after {
+      background-color: $onzie-primary;
+    }
+  }
+
+  .client-showcase {
+    background: linear-gradient(180deg, $onzie-primary, $onzie-primary 25%, $onzie-secondary);
+  }
+}
+
+#firestone {
+  .client-title {
+    color: $firestone-primary;
+
+    &:after {
+      background-color: $firestone-primary;
+    }
+  }
+
+  .client-showcase {
+    background: linear-gradient(180deg, $firestone-primary, $firestone-primary 25%, $firestone-secondary);
+  }
+}
+
+#cannon {
+  .client-title {
+    color: $cannon-primary;
+
+    &:after {
+      background-color: $cannon-primary;
+    }
+  }
+
+  .client-showcase {
+    background: linear-gradient(180deg, $cannon-primary, $cannon-primary 25%, $cannon-secondary);
+  }
+}
+
 #urbane {
   .client-title {
     color: $urbane-primary;
@@ -110,25 +172,6 @@
     background: linear-gradient(180deg, $urbane-primary, $urbane-primary 25%, $urbane-secondary);
   }
 
-  .client-showcase-image {
-    top: 15%;
-    width: 60%;
-    transform: none;
-  }
-}
-
-#eco {
-  .client-title {
-    color: $eco-primary;
-
-    &:after {
-      background-color: $eco-primary;
-    }
-  }
-
-  .client-showcase {
-    background: linear-gradient(180deg, $eco-primary, $eco-primary 25%, $eco-secondary);
-  }
 }
 
 #blues {
@@ -162,13 +205,11 @@
     .client-showcase-image {
       top: 150%;
       width: 30%;
-    }
-  }
 
-  #urbane &:hover {
-    .client-showcase-image {
-      top: 100%;
-      width: 30%;
+      &.client-showcase-phone {
+          top: 100%;
+          width: 30%;
+      }
     }
   }
 }
