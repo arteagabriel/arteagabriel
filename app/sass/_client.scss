@@ -188,6 +188,20 @@
   }
 }
 
+#swapcoins {
+  .client-title {
+    color: $swapcoins-primary;
+
+    &:after {
+      background-color: $swapcoins-primary;
+    }
+  }
+
+  .client-showcase {
+    background: linear-gradient(180deg, $swapcoins-primary, $swapcoins-primary 25%, $swapcoins-secondary);
+  }
+}
+
 .client-link {
   transform: translate3d(0, 0, 0);
   display: block;
