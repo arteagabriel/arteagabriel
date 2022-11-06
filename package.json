@@ -10,7 +10,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "del": "^1.1.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-filter": "^4.0.0",
@@ -19,7 +19,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-swig": "^0.8.0",
+    "gulp-swig": "^0.9.1",
     "gulp-uglify": "^2.0.0"
   },
   "dependencies": {},
